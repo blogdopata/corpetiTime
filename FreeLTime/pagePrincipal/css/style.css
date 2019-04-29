@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-	
-
 body {
-  font-family: 'robotoTime', Fallback, sans-serif;
+    font-family: 'robotoTime', Fallback, sans-serif;
 }
 
-.nav-link{
-  color:black !important;
-  font-weight: bold;
-  font-family: 'Roboto', Fallback, sans-serif;
+.nav-link {
+    color: black !important;
+    font-weight: bold;
+    font-family: 'Roboto', Fallback, sans-serif;
 }
-h1{
-  background-color: red;
-  font-family: 'Roboto', Fallback, sans-serif;
+
+h1 {
+    background-color: red;
+    font-family: 'Roboto', Fallback, sans-serif;
+}
+
+.color-text-link li {
+    margin: 0 10px;
+    border: 1px solid #000;
+}
+
+.color-text-link li a {
+    color: white !important;
+    background-color: #0664A4;
 }
