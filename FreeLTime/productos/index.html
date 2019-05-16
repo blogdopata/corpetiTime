@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery smoothScroll.js Demo Page</title>
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+ 
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    section {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+    }
+
+    .s-1 { background-color: #EAEDED; }
+
+    .s-2 { background-color: #1B9AAA; }
+
+    .s-3 { background-color: #E86361; }
+
+    .s-4 { background-color: #B271C0; }
+
+    section a {
+      position: relative;
+      margin-top: 100px;
+      color: #fff;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px dotted #fff;
+      padding: 10px;
+    }
+    a.link-1 { margin-top:0;}
+   
+</style>
+</head>
+
+<div class="main" style="position: fixed;width:100%;z-index:1000">
+
+        <div class="container-fluid" style="background-color:#F45535">
+            <div class="container">
+                <nav class="navbar navbar-expand-sm navbar-dark">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/corpeti.png" width="200" alt="">
+
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav color-text-link">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Bienvenido</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+
+
+    </div>  
+
+
+
+
+<section class="s-1 "  style="color:black;" id="top">
+
+
+<a href="#2" class="link-1" style="background-color:black; top:100px">
+  
+  Goto Section 2
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="s-2" id="2"><a href="#3">Goto Section 3</a></section>
+<section class="s-3" id="3"><a href="#4">Goto Section 4</a></section>
+<section class="s-4" id="4"><a href="#top">Back To Top</a></section>
+
+
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://unpkg.com/jquery.smoothscroll@2.0.0/dist/jquery.smoothscroll.min.js"></script>
+
+
+
+
+
+<script>
+$( 'a[href^="#"]' ).SmoothScroll( {
+  
+        duration: 1000,
+        easing  : 'easeOutQuint',
+        
+    } );
+</script>
+
+</body>
+</html>
