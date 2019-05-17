@@ -1,27 +1,27 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jQuery smoothScroll.js Demo Page</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery smoothScroll.js Demo Page</title>
 
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 
 
 
-<style>
- 
-
-    html, body {
+  <style>
+    html,
+    body {
       height: 100%;
       width: 100%;
     }
@@ -29,84 +29,221 @@
     section {
       height: 100%;
       width: 100%;
-      text-align: center;
       color: #fff;
     }
 
-    .s-1 { background-color: #EAEDED; }
+    .s-1 {
+      background-color: rebeccapurple
+    }
 
-    .s-2 { background-color: #1B9AAA; }
+    .s-2 {
+      background-color: #1B9AAA;
+    }
 
-    .s-3 { background-color: #E86361; }
+    .s-3 {
+      background-color: #0664A4;
+    }
 
-    .s-4 { background-color: #B271C0; }
+    .s-4 {
+      background-color: #85144b;
+    }
+
+
+    .s-10 {
+      background-color: #0074D9;
+    }
 
     section a {
-      position: relative;
-      margin-top: 100px;
       color: #fff;
       text-decoration: none;
-      display: inline-block;
       border: 1px dotted #fff;
       padding: 10px;
+      width: 200px;
+
     }
-    a.link-1 { margin-top:0;}
+
+    section a:hover {
+      text-decoration: none;
+      color: #F45535;
+    }
+
+    .fix-container-1 {
+      background-color: #B271C0;
+      margin-top: 90px;
+
+    }
+
+    .fix-container-others {
+      padding-top: 70px;
+  
+    }
+
+    
    
-</style>
+    @media (max-width: 576px) {
+      .fix-container-1 {
+        background-color: green;
+        margin-top: 12%;
+      }
+
+
+
+
+    }
+  </style>
 </head>
 
 <div class="main" style="position: fixed;width:100%;z-index:1000">
 
-        <div class="container-fluid" style="background-color:#F45535">
-            <div class="container">
-                <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand" href="#">
-                        <img src="img/corpeti.png" width="200" alt="">
+  <div class="container-fluid" style="background-color:#F45535">
+    <div class="container">
+      <nav class="navbar navbar-expand-sm navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="img/corpeti.png" width="200" alt="">
 
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
-                        <ul class="navbar-nav color-text-link">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Bienvenido</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contactos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+          <ul class="navbar-nav color-text-link">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bienvenido</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactos</a>
+            </li>
+          </ul>
         </div>
+      </nav>
+    </div>
+  </div>
 
 
 
 
-    </div>  
+</div>
 
 
 
 
-<section class="s-1 "  style="color:black;" id="top">
+<section class="s-1 " style="color:black; border:1px solid red;" id="lapiceros">
 
 
-<a href="#2" class="link-1" style="background-color:black; top:100px">
-  
-  Goto Section 2
+  <div class="container-fluid fix-container-1" style='border: 5px solid yellow;'>
 
-</a>
+    <div class="row">
+
+      <div class="col-2 d-none d-md-block" style='border: 14px solid red;'>
+
+        <div class="d-flex flex-column" style="position: fixed; z-index:9999;">
 
 
+          <a href="#lapiceros" style="background-color:black; top:100px">
+
+            Lapiceros
+
+          </a>
+
+
+
+          <a href="#polos" style="background-color:black; top:100px">
+
+            Polos
+          </a>
+          <a href="#tomatodos" style="background-color:black; top:100px">
+
+            Tomatodos
+
+          </a>
+
+          <a href="#gorros" style="background-color:black; top:100px">
+
+            Gorros
+
+          </a>
+
+          <a href="#canguros" style="background-color:black; top:100px">
+
+            Canguros
+
+          </a>
+
+
+
+          <a href="#utiles-de-escritorio" style="background-color:black; top:100px">
+
+            Útiles de escritorio
+
+          </a>
+
+          <a href="#miscelanea" style="background-color:black; top:100px">
+
+            Miscelánea
+
+
+
+          </a>
+
+          <a href="#productos-antiestres" style="background-color:black; top:100px">
+
+            Productos antiestrés
+
+          </a>
+
+          <a href="#bolsas-ecologicas" style="background-color:black; top:100px">
+
+            Bolsas ecológicas
+
+
+          </a>
+
+          <a href="#llaveros" style="background-color:black; top:100px">
+
+
+            Llaveros
+
+          </a>
+
+
+
+        </div>
+      </div>
+
+      <div class="col-12 col-md-9" style='border: 1px solid red;'>
+
+        HAHAHA Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci provident quod culpa soluta
+        ratione cum? Enim cum tempora non eaque, maiores itaque, explicabo ab fugit praesentium dolore tempore repellat?
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quibusdam voluptas, consectetur facilis iure
+        hic doloremque dolore mollitia molestiae, cum soluta consequatur magnam, repellendus commodi! Earum est odit
+        quod asperiores labore nobis? Ea, ipsum. Tempore modi possimus porro accusantium dolore numquam asperiores
+        dolorum, at eveniet. Voluptates placeat odio repellat quo! Blanditiis aspernatur minus maxime amet laborum
+        beatae, reiciendis, ex vitae fugit nesciunt molestiae itaque. Libero odit asperiores id, eligendi assumenda
+        dolorem quis pariatur et, dolorum recusandae, hic similique tenetur ipsa! Quaerat quisquam eaque quam numquam
+        dolores in blanditiis reprehenderit vel molestias, voluptates minus fugiat, quibusdam quidem doloremque! Quos,
+        minus amet?
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <footer class="container-fluid footerT" style="position:fixed; bottom: 0; z-index:9999;">
+      <div class="row">
+          <div class="col-12 text-center">
+              <p class="text-footer d-flex justify-content-center m-0 p-0">Copyright © Corpeti SAC.
+                  Diseñado Corpeti SAC / Artículos Publicitarios, Merchandising empresarial, Promocionales y
+                  Merchandising</p>
+          </div>
+      </div>
+  </footer>
 
 </section>
 
@@ -118,15 +255,255 @@
 
 
 
+<section class="s-2" id="polos">
+
+
+
+
+  <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+    <div class="row">
+
+
+      <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+        rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+        Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+        repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+        asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+        doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+        fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+</section>
 
 
 
 
 
-<section class="s-2" id="2"><a href="#3">Goto Section 3</a></section>
-<section class="s-3" id="3"><a href="#4">Goto Section 4</a></section>
-<section class="s-4" id="4"><a href="#top">Back To Top</a></section>
 
+
+<section class="s-3" id="tomatodos">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+    </div>
+    
+
+
+</section>
+
+
+
+
+<section class="s-4" id="gorros">
+
+
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+</section>
+
+
+
+
+
+<section class="s-2" id="canguros">
+
+
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+</section>
+
+
+
+
+
+<section class="s-3" id="utiles-de-escritorio">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+
+</section>
+
+
+
+<section class="s-4" id="miscelanea">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+
+</section>
+
+
+<section class="s-10" id="productos-antiestres">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+
+</section>
+
+
+
+<section class="s-2" id="bolsas-ecologicas">
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+
+
+
+</section>
+
+
+
+<section class="s-3" id="llaveros">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+  
+  
+  
+  </section>
 
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -137,13 +514,14 @@
 
 
 <script>
-$( 'a[href^="#"]' ).SmoothScroll( {
-  
-        duration: 1000,
-        easing  : 'easeOutQuint',
-        
-    } );
+  $('a[href^="#"]').SmoothScroll({
+
+    duration: 1000,
+    easing: 'easeOutQuint',
+
+  });
 </script>
 
 </body>
+
 </html>

@@ -46,10 +46,10 @@ p.corpeti-text{
     border-radius: 6px;
 }
 
-
 .main{
 flex: 1 0 auto;
 }
+
 .footerT{
 flex-shrink: 0 !important;
 background-color: #343A40;
@@ -59,5 +59,29 @@ padding: 20px;
 .text-footer {
     color:white;
     font-size: 14px;
+
+}
+
+
+
+/*  MEDIA PARA EL FONO */ 
+
+
+@media (max-width: 576px) {
+    .fix-container-1 {
+
+      background-color: green;
+      margin-top: 12%;
+
+    }
+    
+    .color-text-link li a {
+        color: white !important;
+        background-color: black;
+        border-radius: 0px;
+        padding: 5px 10px !important;
+        margin: 1px 0;
+    }
+    
 
 }
