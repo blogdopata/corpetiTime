@@ -116,7 +116,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Contactos</a>
+              <a class="nav-link" href="#contactos">Contactos</a>
             </li>
           </ul>
         </div>
@@ -128,6 +128,9 @@
 
 
 </div>
+
+
+
 
 
 
@@ -216,6 +219,19 @@
       </div>
 
       <div class="col-12 col-md-9" style='border: 1px solid red;'>
+
+          <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9999;">
+              <select  onchange='myFunction()' id="mySelect"> 
+
+                  <option value="#lapiceros">Lapiceros</a> </option>
+                  <option value="#polos">Polos</option>  
+                  <option value="#tomatodos">Tomatodos</option>
+                  <option>The Wolf of Wallstreet</option>
+                  <option>Quantum of Solace</option>
+              </select>
+          </span>
+
+
 
         HAHAHA Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci provident quod culpa soluta
         ratione cum? Enim cum tempora non eaque, maiores itaque, explicabo ab fugit praesentium dolore tempore repellat?
@@ -505,6 +521,35 @@
   
   </section>
 
+
+  
+<section class="s-1" id="contactos">
+
+    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+
+        <div class="row">
+    
+    
+          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
+            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
+            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
+            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
+            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
+            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
+            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+          </div>
+    
+        </div>
+      </div>
+    
+  
+  
+  
+  </section>
+
+
+
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://unpkg.com/jquery.smoothscroll@2.0.0/dist/jquery.smoothscroll.min.js"></script>
@@ -516,11 +561,30 @@
 <script>
   $('a[href^="#"]').SmoothScroll({
 
-    duration: 1000,
+    duration: 800,
     easing: 'easeOutQuint',
 
   });
 </script>
+
+
+
+<script>
+   
+   function myFunction(){
+
+    var x = document.getElementById("mySelect").value;
+
+    document.location.hash = x;
+
+   }
+  
+
+
+
+  
+  </script>
+
 
 </body>
 
