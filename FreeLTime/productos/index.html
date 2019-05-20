@@ -2,127 +2,118 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery smoothScroll.js Demo Page</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery smoothScroll.js Demo Page</title>
 
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-  <script type="text/javascript" src="engine1/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+    <script type="text/javascript" src="engine1/jquery.js"></script>
 
-  <link rel="stylesheet" href="css/style.css">
-
-
-
-  <style>
-    html,
-    body {
-      height: 100%;
-      width: 100%;
-    }
-
-    section {
-      height: 100%;
-      width: 100%;
-      color: #fff;
-    }
-
-    .s-1 {
-      background-color: rebeccapurple
-    }
-
-    .s-2 {
-      background-color: #1B9AAA;
-    }
-
-    .s-3 {
-      background-color: #0664A4;
-    }
-
-    .s-4 {
-      background-color: #85144b;
-    }
-
-
-    .s-10 {
-      background-color: #0074D9;
-    }
-
-    section a {
-      color: #fff;
-      text-decoration: none;
-      border: 1px dotted #fff;
-      padding: 10px;
-      width: 200px;
-
-    }
-
-    section a:hover {
-      text-decoration: none;
-      color: #F45535;
-    }
-
-    .fix-container-1 {
-      background-color: #B271C0;
-      margin-top: 90px;
-
-    }
-
-    .fix-container-others {
-      padding-top: 70px;
-  
-    }
-
-    
-   
-    @media (max-width: 576px) {
-      .fix-container-1 {
-        background-color: green;
-        margin-top: 12%;
-      }
+    <link rel="stylesheet" href="css/style.css">
 
 
 
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+        }
+        
+        section {
+            height: 100%;
+            width: 100%;
+            color: #fff;
+        }
+        
+        .s-1 {
+            background-color: rebeccapurple
+        }
+        
+        .s-2 {
+            background-color: #1B9AAA;
+        }
+        
+        .s-3 {
+            background-color: #0664A4;
+        }
+        
+        .s-4 {
+            background-color: #85144b;
+        }
+        
+        .s-10 {
+            background-color: #0074D9;
+        }
+        
+        section a {
+            color: #fff;
+            text-decoration: none;
+            border: 1px dotted #fff;
+            padding: 10px;
+            width: 200px;
+        }
+        
+        section a:hover {
+            text-decoration: none;
+            color: #F45535;
+        }
+        
+        .fix-container-1 {
+            background-color: #B271C0;
+            margin-top: 90px;
+        }
+        
+        .fix-container-others {
+            padding-top: 70px;
+        }
+        
+        @media (max-width: 576px) {
+            .fix-container-1 {
+                background-color: green;
+                margin-top: 12%;
+            }
+        }
+    </style>
 
-    }
-  </style>
 </head>
 
 <div class="main" style="position: fixed;width:100%;z-index:1000">
 
-  <div class="container-fluid" style="background-color:#F45535">
-    <div class="container">
-      <nav class="navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand" href="#">
-          <img src="img/corpeti.png" width="200" alt="">
+    <div class="container-fluid" style="background-color:#F45535">
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                <a class="navbar-brand" href="#">
+                    <img src="img/corpeti.png" width="200" alt="">
 
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
-          <ul class="navbar-nav color-text-link">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Bienvenido</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Productos</a>
-            </li>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav color-text-link">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bienvenido</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Productos</a>
+                        </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#contactos">Contactos</a>
-            </li>
-          </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactos">Contactos</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </nav>
     </div>
-  </div>
 
 
 
@@ -138,16 +129,16 @@
 <section class="s-1 " style="color:black; border:1px solid red;" id="lapiceros">
 
 
-  <div class="container-fluid fix-container-1" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-1" style='border: 1px solid yellow;'>
 
-    <div class="row">
+        <div class="row">
 
-      <div class="col-2 d-none d-md-block" style='border: 14px solid red;'>
+            <div class="col-2 d-none d-md-block" style='border: 1px solid red;'>
 
-        <div class="d-flex flex-column" style="position: fixed; z-index:9999;">
+                <div class="d-flex flex-column" style="position: fixed; z-index:9999;">
 
 
-          <a href="#lapiceros" style="background-color:black; top:100px">
+                    <a href="#lapiceros" style="background-color:black; top:100px">
 
             Lapiceros
 
@@ -155,23 +146,23 @@
 
 
 
-          <a href="#polos" style="background-color:black; top:100px">
+                    <a href="#polos" style="background-color:black; top:100px">
 
             Polos
           </a>
-          <a href="#tomatodos" style="background-color:black; top:100px">
+                    <a href="#tomatodos" style="background-color:black; top:100px">
 
             Tomatodos
 
           </a>
 
-          <a href="#gorros" style="background-color:black; top:100px">
+                    <a href="#gorros" style="background-color:black; top:100px">
 
             Gorros
 
           </a>
 
-          <a href="#canguros" style="background-color:black; top:100px">
+                    <a href="#canguros" style="background-color:black; top:100px">
 
             Canguros
 
@@ -179,13 +170,13 @@
 
 
 
-          <a href="#utiles-de-escritorio" style="background-color:black; top:100px">
+                    <a href="#utiles-de-escritorio" style="background-color:black; top:100px">
 
             Útiles de escritorio
 
           </a>
 
-          <a href="#miscelanea" style="background-color:black; top:100px">
+                    <a href="#miscelanea" style="background-color:black; top:100px">
 
             Miscelánea
 
@@ -193,20 +184,20 @@
 
           </a>
 
-          <a href="#productos-antiestres" style="background-color:black; top:100px">
+                    <a href="#productos-antiestres" style="background-color:black; top:100px">
 
             Productos antiestrés
 
           </a>
 
-          <a href="#bolsas-ecologicas" style="background-color:black; top:100px">
+                    <a href="#bolsas-ecologicas" style="background-color:black; top:100px">
 
             Bolsas ecológicas
 
 
           </a>
 
-          <a href="#llaveros" style="background-color:black; top:100px">
+                    <a href="#llaveros" style="background-color:black; top:100px">
 
 
             Llaveros
@@ -215,51 +206,54 @@
 
 
 
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9" style='border: 1px solid red;'>
+
+
+
+
+                <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9999;">
+                  <select  onchange='myFunction()' id="mySelect"> 
+                      <option default >Seleccione un producto</a> </option>
+                      <option value="#lapiceros">Lapiceros</a> </option>
+                      <option value="#polos">Polos</option>  
+                      <option value="#tomatodos">Tomatodos</option>
+                      <option value="#gorros">Gorros</option>
+                      <option value="#canguros">Canguros</option>
+                      <option value="#utiles-de-escritorio">Utiles de escritorio</option>
+                      <option value="#miscelanea">Miscelánea</option>
+                      <option value="#productos-antiestres">Productos antiestrés</option>
+                      <option value="#bolsas-ecologicas">Bolsas ecológicas</option>
+                      <option value="#llaveros">Llaveros</option>
+                     
+                     
+                  </select>
+              </span>
+
+                <div style='border: 1px solid red'>
+                    HAHAHA Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci provident quod culpa soluta ratione cum? Enim cum tempora non eaque, maiores itaque, explicabo ab fugit praesentium dolore tempore repellat? Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Numquam quibusdam voluptas, consectetur facilis iure hic doloremque dolore mollitia molestiae, cum soluta consequatur magnam, repellendus commodi! Earum est odit quod asperiores labore nobis? Ea, ipsum. Tempore modi
+                    possimus porro accusantium dolore numquam asperiores dolorum, at eveniet. Voluptates placeat odio repellat quo! Blanditiis aspernatur minus maxime amet laborum beatae, reiciendis, ex vitae fugit nesciunt molestiae itaque. Libero odit
+                    asperiores id, eligendi assumenda dolorem quis pariatur et, dolorum recusandae, hic similique tenetur ipsa! Quaerat quisquam eaque quam numquam dolores in blanditiis reprehenderit vel molestias, voluptates minus fugiat, quibusdam quidem
+                    doloremque! Quos, minus amet?
+                </div>
+            </div>
+
         </div>
-      </div>
 
-      <div class="col-12 col-md-9" style='border: 1px solid red;'>
-
-          <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9999;">
-              <select  onchange='myFunction()' id="mySelect"> 
-
-                  <option value="#lapiceros">Lapiceros</a> </option>
-                  <option value="#polos">Polos</option>  
-                  <option value="#tomatodos">Tomatodos</option>
-                  <option>The Wolf of Wallstreet</option>
-                  <option>Quantum of Solace</option>
-              </select>
-          </span>
-
-
-
-        HAHAHA Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci provident quod culpa soluta
-        ratione cum? Enim cum tempora non eaque, maiores itaque, explicabo ab fugit praesentium dolore tempore repellat?
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quibusdam voluptas, consectetur facilis iure
-        hic doloremque dolore mollitia molestiae, cum soluta consequatur magnam, repellendus commodi! Earum est odit
-        quod asperiores labore nobis? Ea, ipsum. Tempore modi possimus porro accusantium dolore numquam asperiores
-        dolorum, at eveniet. Voluptates placeat odio repellat quo! Blanditiis aspernatur minus maxime amet laborum
-        beatae, reiciendis, ex vitae fugit nesciunt molestiae itaque. Libero odit asperiores id, eligendi assumenda
-        dolorem quis pariatur et, dolorum recusandae, hic similique tenetur ipsa! Quaerat quisquam eaque quam numquam
-        dolores in blanditiis reprehenderit vel molestias, voluptates minus fugiat, quibusdam quidem doloremque! Quos,
-        minus amet?
-
-      </div>
 
     </div>
 
-
-  </div>
-
-  <footer class="container-fluid footerT" style="position:fixed; bottom: 0; z-index:9999;">
-      <div class="row">
-          <div class="col-12 text-center">
-              <p class="text-footer d-flex justify-content-center m-0 p-0">Copyright © Corpeti SAC.
-                  Diseñado Corpeti SAC / Artículos Publicitarios, Merchandising empresarial, Promocionales y
-                  Merchandising</p>
-          </div>
-      </div>
-  </footer>
+    <footer class="container-fluid footerT" style="position:fixed; bottom: 0; z-index:9999;">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="text-footer d-flex justify-content-center m-0 p-0">Copyright © Corpeti SAC. Diseñado Corpeti SAC / Artículos Publicitarios, Merchandising empresarial, Promocionales y Merchandising
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </section>
 
@@ -271,28 +265,21 @@
 
 
 
-<section class="s-2" id="polos">
+<section class="s-2 " id="polos">
+
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
+
+        <div class="row">
 
 
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
 
-
-  <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
-
-    <div class="row">
-
-
-      <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-        rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-        Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-        repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-        asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-        doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-        fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-      </div>
-
+        </div>
     </div>
-  </div>
 
 
 
@@ -307,23 +294,19 @@
 
 <section class="s-3" id="tomatodos">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
     </div>
-    
+
 
 
 </section>
@@ -335,24 +318,20 @@
 
 
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 </section>
 
@@ -364,24 +343,20 @@
 
 
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 
 </section>
@@ -392,24 +367,20 @@
 
 <section class="s-3" id="utiles-de-escritorio">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 
 
@@ -419,24 +390,20 @@
 
 <section class="s-4" id="miscelanea">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 
 
@@ -445,24 +412,20 @@
 
 <section class="s-10" id="productos-antiestres">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 
 
@@ -471,24 +434,20 @@
 
 
 <section class="s-2" id="bolsas-ecologicas">
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
+    </div>
+
 
 
 
@@ -498,55 +457,47 @@
 
 <section class="s-3" id="llaveros">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
-  
-  
-  
-  </section>
+    </div>
 
 
-  
+
+
+</section>
+
+
+
 <section class="s-1" id="contactos">
 
-    <div class="container-fluid fix-container-others" style='border: 5px solid yellow;'>
+    <div class="container-fluid fix-container-others" style='border: 1px solid yellow;'>
 
         <div class="row">
-    
-    
-          <div class="offset-md-2 col-12 col-md-9" style='border: 14px solid red;'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta
-            rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed.
-            Quaerat beatae quo ut quia velit? Repellendus nostrum eius consectetur excepturi quia natus provident adipisci
-            repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum
-            asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci assumenda placeat, obcaecati officia
-            doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse
-            fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
-          </div>
-    
+
+
+            <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+            </div>
+
         </div>
-      </div>
-    
-  
-  
-  
-  </section>
+    </div>
+
+
+
+
+</section>
 
 
 
@@ -559,31 +510,25 @@
 
 
 <script>
-  $('a[href^="#"]').SmoothScroll({
+    $('a[href^="#"]').SmoothScroll({
 
-    duration: 800,
-    easing: 'easeOutQuint',
+        duration: 800,
+        easing: 'easeOutQuint',
 
-  });
+    });
 </script>
 
 
 
 <script>
-   
-   function myFunction(){
+    function myFunction() {
 
-    var x = document.getElementById("mySelect").value;
+        var x = document.getElementById("mySelect").value;
 
-    document.location.hash = x;
+        document.location.hash = x;
 
-   }
-  
-
-
-
-  
-  </script>
+    }
+</script>
 
 
 </body>
