@@ -5,53 +5,56 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jQuery smoothScroll.js Demo Page</title>
+    <title>Corpeti S.A.C</title>
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="engine1/style.css" />
-    <script type="text/javascript" src="engine1/jquery.js"></script>
+
 
     <link rel="stylesheet" href="css/style.css">
 
 
 
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
         html,
         body {
             height: 100%;
             width: 100%;
         }
-        
+
         section {
             height: 100%;
             width: 100%;
             color: #fff;
         }
-        
+
         .s-1 {
             background-color: rebeccapurple
         }
-        
+
         .s-2 {
             background-color: #1B9AAA;
         }
-        
+
         .s-3 {
             background-color: #0664A4;
         }
-        
+
         .s-4 {
             background-color: #85144b;
         }
-        
+
         .s-10 {
             background-color: #0074D9;
         }
-        
+
         section a {
             color: #fff;
             text-decoration: none;
@@ -59,24 +62,24 @@
             padding: 10px;
             width: 200px;
         }
-        
+
         section a:hover {
             text-decoration: none;
             color: #F45535;
         }
-        
+
         .fix-container-1 {
-            background-color: #B271C0;
+            /* background-color: #B271C0;*/
             margin-top: 90px;
         }
-        
+
         .fix-container-others {
             padding-top: 70px;
         }
-        
+
         @media (max-width: 576px) {
             .fix-container-1 {
-                background-color: green;
+                /* background-color: green;*/
                 margin-top: 12%;
             }
         }
@@ -93,9 +96,10 @@
                     <img src="img/corpeti.png" width="200" alt="">
 
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" style="background-color:black;z-index: 9999;" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <div class="collapse navbar-collapse d-lg-flex justify-content-lg-end" id="collapsibleNavbar">
                     <ul class="navbar-nav color-text-link">
@@ -140,69 +144,69 @@
 
                     <a href="#lapiceros" style="background-color:black; top:100px">
 
-            Lapiceros
+                        Lapiceros
 
-          </a>
+                    </a>
 
 
 
                     <a href="#polos" style="background-color:black; top:100px">
 
-            Polos
-          </a>
+                        Polos
+                    </a>
                     <a href="#tomatodos" style="background-color:black; top:100px">
 
-            Tomatodos
+                        Tomatodos
 
-          </a>
+                    </a>
 
                     <a href="#gorros" style="background-color:black; top:100px">
 
-            Gorros
+                        Gorros
 
-          </a>
+                    </a>
 
                     <a href="#canguros" style="background-color:black; top:100px">
 
-            Canguros
+                        Canguros
 
-          </a>
+                    </a>
 
 
 
                     <a href="#utiles-de-escritorio" style="background-color:black; top:100px">
 
-            Útiles de escritorio
+                        Útiles de escritorio
 
-          </a>
+                    </a>
 
                     <a href="#miscelanea" style="background-color:black; top:100px">
 
-            Miscelánea
+                        Miscelánea
 
 
 
-          </a>
+                    </a>
 
                     <a href="#productos-antiestres" style="background-color:black; top:100px">
 
-            Productos antiestrés
+                        Productos antiestrés
 
-          </a>
+                    </a>
 
                     <a href="#bolsas-ecologicas" style="background-color:black; top:100px">
 
-            Bolsas ecológicas
+                        Bolsas ecológicas
 
 
-          </a>
+                    </a>
 
                     <a href="#llaveros" style="background-color:black; top:100px">
 
 
-            Llaveros
+                        Llaveros
 
-          </a>
+                    </a>
 
 
 
@@ -214,7 +218,7 @@
 
 
 
-                <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9999;">
+                 <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9998;">
                   <select  onchange='myFunction()' id="mySelect"> 
                       <option default >Seleccione un producto</a> </option>
                       <option value="#lapiceros">Lapiceros</a> </option>
@@ -230,14 +234,14 @@
                      
                      
                   </select>
-              </span>
+              </span> 
 
                 <div style='border: 1px solid red'>
-                    HAHAHA Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore adipisci provident quod culpa soluta ratione cum? Enim cum tempora non eaque, maiores itaque, explicabo ab fugit praesentium dolore tempore repellat? Lorem ipsum dolor sit amet consectetur,
-                    adipisicing elit. Numquam quibusdam voluptas, consectetur facilis iure hic doloremque dolore mollitia molestiae, cum soluta consequatur magnam, repellendus commodi! Earum est odit quod asperiores labore nobis? Ea, ipsum. Tempore modi
-                    possimus porro accusantium dolore numquam asperiores dolorum, at eveniet. Voluptates placeat odio repellat quo! Blanditiis aspernatur minus maxime amet laborum beatae, reiciendis, ex vitae fugit nesciunt molestiae itaque. Libero odit
-                    asperiores id, eligendi assumenda dolorem quis pariatur et, dolorum recusandae, hic similique tenetur ipsa! Quaerat quisquam eaque quam numquam dolores in blanditiis reprehenderit vel molestias, voluptates minus fugiat, quibusdam quidem
-                    doloremque! Quos, minus amet?
+                    <h2> Lapiceros </h2>
+
+
+
+
                 </div>
             </div>
 
@@ -249,7 +253,8 @@
     <footer class="container-fluid footerT" style="position:fixed; bottom: 0; z-index:9999;">
         <div class="row">
             <div class="col-12 text-center">
-                <p class="text-footer d-flex justify-content-center m-0 p-0">Copyright © Corpeti SAC. Diseñado Corpeti SAC / Artículos Publicitarios, Merchandising empresarial, Promocionales y Merchandising
+                <p class="text-footer d-flex justify-content-center m-0 p-0">Copyright © Corpeti SAC. Diseñado Corpeti
+                    SAC / Artículos Publicitarios, Merchandising empresarial, Promocionales y Merchandising
                 </p>
             </div>
         </div>
@@ -273,9 +278,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -299,9 +310,15 @@
         <div class="row">
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -324,9 +341,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -349,9 +372,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -373,9 +402,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -396,9 +431,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -418,9 +459,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -440,9 +487,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -463,9 +516,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -486,9 +545,15 @@
 
 
             <div class="offset-md-2 col-12 col-md-9 mt-4" style='border: 1px solid red;'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique, soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor. Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
-                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga et ullam at, minus tempora. Adipisci
-                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius, exercitationem perspiciatis culpa doloremque?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum totam maxime reprehenderit similique,
+                soluta rem dolore, enim earum, minima quos modi perferendis natus repellat architecto quam dolor.
+                Incidunt, sed. Quaerat beatae quo ut quia velit? Repellendus
+                nostrum eius consectetur excepturi quia natus provident adipisci repellat iure sequi quod nemo culpa
+                dicta quaerat accusamus rem, quam a beatae saepe exercitationem. Harum asperiores quis nisi dolores fuga
+                et ullam at, minus tempora. Adipisci
+                assumenda placeat, obcaecati officia doloremque velit deleniti! Natus molestias numquam eaque, sit
+                consectetur, facilis, quia dolorem debitis esse fugit minus. Reiciendis aliquid nulla aut eius,
+                exercitationem perspiciatis culpa doloremque?
             </div>
 
         </div>
@@ -516,6 +581,11 @@
         easing: 'easeOutQuint',
 
     });
+
+
+
+    
+
 </script>
 
 
