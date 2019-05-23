@@ -9,81 +9,25 @@
 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
+
+
+    <!-- Para el slider  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+    <script src="js/controlsSlider.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+
+    <link rel="stylesheet" href="css/responsiveslides.css">
+    <link rel="stylesheet" href="css/sliderProductos.css">
+    <!-- FIN  slider  -->
 
     <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/scrollTime.css">
 
 
-
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        html,
-        body {
-            height: 100%;
-            width: 100%;
-        }
-
-        section {
-            height: 100%;
-            width: 100%;
-            color: #fff;
-        }
-
-        .s-1 {
-            background-color: rebeccapurple
-        }
-
-        .s-2 {
-            background-color: #1B9AAA;
-        }
-
-        .s-3 {
-            background-color: #0664A4;
-        }
-
-        .s-4 {
-            background-color: #85144b;
-        }
-
-        .s-10 {
-            background-color: #0074D9;
-        }
-
-        section a {
-            color: #fff;
-            text-decoration: none;
-            border: 1px dotted #fff;
-            padding: 10px;
-            width: 200px;
-        }
-
-        section a:hover {
-            text-decoration: none;
-            color: #F45535;
-        }
-
-        .fix-container-1 {
-            /* background-color: #B271C0;*/
-            margin-top: 90px;
-        }
-
-        .fix-container-others {
-            padding-top: 70px;
-        }
-
-        @media (max-width: 576px) {
-            .fix-container-1 {
-                /* background-color: green;*/
-                margin-top: 12%;
-            }
-        }
-    </style>
+    
 
 </head>
 
@@ -96,8 +40,8 @@
                     <img src="img/corpeti.png" width="200" alt="">
 
                 </a>
-                <button class="navbar-toggler" style="background-color:black;z-index: 9999;" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavbar">
+                <button class="navbar-toggler" style="background-color:black;z-index: 9999;" type="button"
+                    data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -218,32 +162,149 @@
 
 
 
-                 <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9998;">
-                  <select  onchange='myFunction()' id="mySelect"> 
-                      <option default >Seleccione un producto</a> </option>
-                      <option value="#lapiceros">Lapiceros</a> </option>
-                      <option value="#polos">Polos</option>  
-                      <option value="#tomatodos">Tomatodos</option>
-                      <option value="#gorros">Gorros</option>
-                      <option value="#canguros">Canguros</option>
-                      <option value="#utiles-de-escritorio">Utiles de escritorio</option>
-                      <option value="#miscelanea">Miscelánea</option>
-                      <option value="#productos-antiestres">Productos antiestrés</option>
-                      <option value="#bolsas-ecologicas">Bolsas ecológicas</option>
-                      <option value="#llaveros">Llaveros</option>
-                     
-                     
-                  </select>
-              </span> 
-
-                <div style='border: 1px solid red'>
-                    <h2> Lapiceros </h2>
+                <span class="custom-dropdown big d-md-none d-block" style="position: fixed; z-index: 9998;">
+                    <select onchange='myFunction()' id="mySelect">
+                        <option default>Seleccione un producto</a> </option>
+                        <option value="#lapiceros">Lapiceros</a> </option>
+                        <option value="#polos">Polos</option>
+                        <option value="#tomatodos">Tomatodos</option>
+                        <option value="#gorros">Gorros</option>
+                        <option value="#canguros">Canguros</option>
+                        <option value="#utiles-de-escritorio">Utiles de escritorio</option>
+                        <option value="#miscelanea">Miscelánea</option>
+                        <option value="#productos-antiestres">Productos antiestrés</option>
+                        <option value="#bolsas-ecologicas">Bolsas ecológicas</option>
+                        <option value="#llaveros">Llaveros</option>
 
 
+                    </select>
+                </span>
 
+                
+
+
+
+                    <div class="row">
+                        <div class="col-12 col-sm-6" style='border: 1px solid red;'>
+                           <!-- <h4 class="text-center text-white">Lapiceros Ecológicos</h4>-->
+                            <div id="wrapper">
+                                <div class="callbacks_container">
+                                    <ul class="rslides" id="slider4">
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/1.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Astra</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/2.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Duo</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/3.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Forest</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/4.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Forest Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/5.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Jumbo</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/6.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Jumbo Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/7.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Kraft Marker</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/8.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Vogue</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/9.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Vogue Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/10.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Whirl</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- FIN wrapper -->
+
+                        </div>
+
+                        <div class="col-6" style='border: 1px solid red;'>
+                            <div id="wrapper">
+                                <div class="callbacks_container">
+                                    <ul class="rslides" id="slider5">
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/1.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Astra</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/2.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Duo</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/3.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Forest</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/4.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Forest Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/5.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Jumbo</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/6.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Jumbo Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/7.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Kraft Marker</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/8.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Vogue</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/9.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Vogue Colors</p>
+                                        </li>
+
+                                        <li>
+                                            <img src="img/lapiceros/ecologicos/10.jpg" alt="">
+                                            <p class="caption">Lapicero Ecológico Whirl</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div> <!-- FIN wrapper -->
+
+                        </div>
+
+
+                    </div>
 
                 </div>
-            </div>
+          
 
         </div>
 
@@ -566,7 +627,7 @@
 
 
 
-<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="https://unpkg.com/jquery.smoothscroll@2.0.0/dist/jquery.smoothscroll.min.js"></script>
 
@@ -582,9 +643,6 @@
 
     });
 
-
-
-    
 
 </script>
 

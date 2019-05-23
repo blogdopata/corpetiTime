@@ -91,14 +91,7 @@ padding: 20px;
 
 
 
-
-
-
-
-
-
-
-/* FOR SELECT */ 
+/*   Para el Select  */ 
 
 
 .big {
@@ -178,3 +171,7 @@ padding: 20px;
   .custom-dropdown::after {
     color: rgba(0,0,0,.4);
   }
+
+
+
+
