@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
-
-html, body {
-  /*  height: 100%;*/
-  }
+html,
 body {
-  /*  font-family: 'robotoTime', Fallback, sans-serif;
+    /*  height: 100%;*/
+}
+
+body {
+    /*  font-family: 'robotoTime', Fallback, sans-serif;
     display: flex !important;
     flex-direction: column !important;
     /*border: 10px solid #000;*/
@@ -16,21 +17,20 @@ body {
     font-family: 'Roboto', Fallback, sans-serif;
 }
 
-
-.corpeti-main{
-    border-radius: 11px 11px 0  0;
+.corpeti-main {
+    border-radius: 11px 11px 0 0;
     border: 1px solid #000;
-    
-} 
+}
+
 h1.corpeti {
     background-color: #2A2A2A;
-    color:white;
+    color: white;
     padding: 10px 0 10px 20px;
     font-size: 28px;
-    border-radius: 10px 10px 0  0;
-
+    border-radius: 10px 10px 0 0;
 }
-p.corpeti-text{
+
+p.corpeti-text {
     padding: 10px;
     font-family: 'Roboto', Fallback, sans-serif;
 }
@@ -46,35 +46,29 @@ p.corpeti-text{
     border-radius: 6px;
 }
 
-.main{
-flex: 1 0 auto;
+.main {
+    flex: 1 0 auto;
 }
 
-.footerT{
-flex-shrink: 0 !important;
-background-color: #343A40;
-padding: 20px;
+.footerT {
+    flex-shrink: 0 !important;
+    background-color: #343A40;
+    padding: 20px;
 }
 
 .text-footer {
-    color:white;
+    color: white;
     font-size: 14px;
-
 }
 
 
-
-/*  MEDIA PARA EL FONO */ 
-
+/*  MEDIA PARA EL FONO */
 
 @media (max-width: 576px) {
     .fix-container-1 {
-
-/*  background-color: green;*/
-      margin-top: 12%;
-
+        /*  background-color: green;*/
+        margin-top: 12%;
     }
-    
     .color-text-link li a {
         color: white !important;
         background-color: black;
@@ -82,63 +76,61 @@ padding: 20px;
         padding: 5px 10px !important;
         margin: 1px 0;
     }
-    
-
 }
 
 
-
-
-
-
-/*   Para el Select  */ 
-
+/*   Para el Select  */
 
 .big {
     font-size: 1.2em;
-  }
-  
-  .small {
+}
+
+.small {
     font-size: .7em;
-  }
-  
-  .square {
+}
+
+.square {
     width: .7em;
     height: .7em;
     margin: .5em;
     display: inline-block;
-  }
-  
-  /* Custom dropdown */
-  .custom-dropdown {
+}
+
+
+/* Custom dropdown */
+
+.custom-dropdown {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin: 10px; /* demo only */
-  }
-  
-  .custom-dropdown select {
+    margin: 10px;
+    /* demo only */
+}
+
+.custom-dropdown select {
     background-color: #0664A4;
     color: #fff;
     font-size: inherit;
     padding: .5em;
-    padding-right: 2.5em; 
+    padding-right: 2.5em;
     border: 0;
     margin: 0;
     border-radius: 3px;
     text-indent: 0.01px;
     text-overflow: '';
-    -webkit-appearance: button; /* hide default arrow in chrome OSX */
-  }
-  
-  .custom-dropdown::before,
-  .custom-dropdown::after {
+    -webkit-appearance: button;
+    /* hide default arrow in chrome OSX */
+}
+
+.custom-dropdown::before,
+.custom-dropdown::after {
     content: "";
     position: absolute;
     pointer-events: none;
-  }
-  
-  .custom-dropdown::after { /*  Custom dropdown arrow */
+}
+
+.custom-dropdown::after {
+    /*  Custom dropdown arrow */
     content: "\25BC";
     height: 1em;
     font-size: .625em;
@@ -146,32 +138,29 @@ padding: 20px;
     right: 1.2em;
     top: 50%;
     margin-top: -.5em;
-  }
-  
-  .custom-dropdown::before { /*  Custom dropdown arrow cover */
+}
+
+.custom-dropdown::before {
+    /*  Custom dropdown arrow cover */
     width: 2em;
     right: 0;
     top: 0;
     bottom: 0;
     border-radius: 0 3px 3px 0;
-  }
-  
-  .custom-dropdown select[disabled] {
-    color: rgba(0,0,0,.3);
-  }
-  
-  .custom-dropdown select[disabled]::after {
-    color: rgba(0,0,0,.1);
-  }
-  
-  .custom-dropdown::before {
-    background-color: rgba(0,0,0,.15);
-  }
-  
-  .custom-dropdown::after {
-    color: rgba(0,0,0,.4);
-  }
+}
 
+.custom-dropdown select[disabled] {
+    color: rgba(0, 0, 0, .3);
+}
 
+.custom-dropdown select[disabled]::after {
+    color: rgba(0, 0, 0, .1);
+}
 
+.custom-dropdown::before {
+    background-color: rgba(0, 0, 0, .15);
+}
 
+.custom-dropdown::after {
+    color: rgba(0, 0, 0, .4);
+}
